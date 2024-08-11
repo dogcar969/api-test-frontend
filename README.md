@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# API测试平台
 
-## Getting Started
+这是API测试平台的前端。
 
-First, run the development server:
+## 技术栈
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+next.js
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ant-design
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+axios
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 界面
 
-## Learn More
+todo
 
-To learn more about Next.js, take a look at the following resources:
+使用ant-design的可编辑表格案例，将其封装。
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+可以更改，获取表格值。
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+文件夹区域使用单列的可扩展表格，每个表格以及可扩展区域都是dropdown，点击可以唤出可执行的操作。
 
-## Deploy on Vercel
+## 功能
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 用户
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+登录，注册，获取用户信息，退出登录，重命名
+
+### 文件夹
+
+新建文件夹，新建属于文件夹的请求，文件夹重命名，文件夹删除，导入请求
+
+### 请求
+
+打开请求，重命名请求，删除请求，新建备份，分享请求，发送请求，设定请求的各项数据，保存请求
+
+
+
+请求的分享与导入通过剪切板复制粘贴请求的json信息来完成，在分享时会除去请求的用户，文件夹外键，在导入时会加上指定的文件夹外键。
